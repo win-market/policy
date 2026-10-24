@@ -207,13 +207,14 @@ Votre prénom, nom, photo de profil et le contenu de vos annonces (texte et imag
 | Prestataire | Rôle | Données concernées |
 |---|---|---|
 | **Contabo GmbH** (Allemagne) | Hébergement des serveurs, de la base de données et du stockage des images | Ensemble des données décrites en section 3 |
+| **Tally BV** (Gand, Belgique) | Hébergement du formulaire de demande de suppression de compte | L'adresse e-mail que vous saisissez dans le formulaire |
 | Expo (Expo Push Notifications) | Acheminement des notifications | Jeton de notification, contenu de la notification |
 | Google (Firebase Cloud Messaging) | Transport technique des notifications Android | Jeton d'appareil |
 | Google Maps Platform | Affichage des cartes | Coordonnées affichées sur la carte |
 | Orange Money | Exécution des paiements | Numéro mobile money, montant, référence |
 | MTN Mobile Money | Exécution des paiements | Numéro mobile money, montant, référence |
 
-Ces prestataires agissent sur instruction et ne sont pas autorisés à utiliser vos données à leurs propres fins.
+Ces prestataires agissent sur instruction et ne sont pas autorisés à utiliser vos données à leurs propres fins. Chacun est lié par un accord de sous-traitance au sens de l'article 28 du RGPD.
 
 ### 7.3 Autorités
 
@@ -221,20 +222,52 @@ Sur réquisition écrite d'une autorité judiciaire, administrative ou policièr
 
 ## 8. Durées de conservation
 
+### 8.1 Par catégorie de donnée
+
 | Catégorie | Durée |
 |---|---|
 | **Dernière position connue** | Écrasée à chaque relevé ; **aucun historique**. Supprimée avec le compte. |
 | Données de compte et de profil | Pendant la vie du compte |
-| Compte supprimé | **30 jours** (délai de rétractation et de sécurité), puis effacement définitif |
 | Annonces, contenus et images publiés | Pendant la vie du compte, ou jusqu'à suppression par vous |
 | Messages | Pendant la vie du compte, ou jusqu'à suppression de la conversation |
-| **Transactions financières** | **10 ans** à compter de l'opération — obligation légale de conservation comptable |
 | Journaux techniques et de sécurité (IP, connexions) | **12 mois** |
 | Jetons de notification push | Jusqu'à désinstallation de l'Application ou désactivation des notifications |
 | Sessions d'authentification | Jusqu'à expiration ou déconnexion |
 | Notifications d'offres déjà envoyées | **12 mois**, puis purge |
+| **Écritures comptables de transactions** | **10 ans** — voir 8.3 |
 
-Au-delà de ces durées, les données sont supprimées ou anonymisées de manière irréversible.
+### 8.2 Ce qui se passe lorsque vous supprimez votre compte
+
+Votre demande est traitée **sous 30 jours**. À l'issue de ce délai, les éléments suivants sont **définitivement supprimés** de nos systèmes :
+
+- Votre compte et vos identifiants de connexion
+- Vos nom, prénom, adresse e-mail, numéro de téléphone et photo de profil
+- Vos données de profil complémentaires (pays, date de naissance, ville, adresse, activité, profession, centres d'intérêt)
+- **Votre dernière position connue**
+- Vos annonces, publications, images, commentaires et mentions « j'aime »
+- Vos conversations et messages
+- Vos jetons de notification et vos sessions d'authentification
+
+**Il ne s'agit pas d'un simple gel du compte.** Votre compte cesse d'exister, vous ne pouvez plus vous y connecter, et votre profil n'est plus accessible aux autres utilisateurs. Le délai de 30 jours sert uniquement à traiter la demande et à vous permettre de revenir sur votre décision en nous écrivant.
+
+### 8.3 La seule exception : les écritures comptables
+
+Une catégorie de donnée survit à la suppression de votre compte : les **écritures comptables de vos transactions** (montant, date, type d'opération, statut, identifiant de transaction).
+
+**Pourquoi.** Le droit comptable applicable au Cameroun (référentiel **OHADA**) impose la conservation des pièces comptables pendant **10 ans**. Le RGPD prévoit expressément cette situation : le droit à l'effacement ne s'applique pas lorsque la conservation est nécessaire au respect d'une obligation légale (**article 17.3.b**).
+
+**Ce qui est conservé, et ce qui ne l'est pas.** Ces écritures sont **dissociées de votre identité**. Elles conservent un identifiant interne, mais vos nom, prénom, e-mail, téléphone et photo en sont effacés. Elles ne permettent plus de vous identifier au sein de l'Application, et ne servent qu'à justifier nos comptes auprès de l'administration fiscale en cas de contrôle.
+
+À l'expiration du délai de 10 ans, ces écritures sont supprimées ou anonymisées de manière irréversible.
+
+### 8.4 Comment demander la suppression
+
+Deux chemins, au choix :
+
+- **Depuis l'Application** : Profil › Réglages › **Supprimer mon compte**
+- **Depuis le web**, même si vous avez désinstallé l'Application : **[URL DU FORMULAIRE TALLY]**
+
+Vous pouvez également écrire à **support@winmarketcm.com**.
 
 ## 9. Sécurité
 
@@ -248,7 +281,7 @@ Vous disposez des droits suivants : **accès**, **rectification**, **effacement*
 
 **Pour exercer ces droits :** écrivez à **support@winmarketcm.com** en précisant votre demande et l'adresse e-mail de votre compte. Nous répondons dans un délai de **30 jours**.
 
-**Suppression de votre compte :** formulaire dédié disponible à l'adresse **https://winmarketcm.com/delete-account**
+**Suppression de votre compte :** depuis l'Application (Profil › Réglages › Supprimer mon compte) ou via le formulaire web **[URL DU FORMULAIRE TALLY]**. Voir le détail en section 8.
 
 **Réclamation :** vous pouvez saisir l'**ANTIC** (Agence Nationale des Technologies de l'Information et de la Communication) au Cameroun. Si vous résidez dans l'Union européenne, vous pouvez saisir l'autorité de protection des données de votre pays de résidence.
 
@@ -276,6 +309,7 @@ Seuls les prestataires suivants peuvent traiter une partie limitée de vos donn�
 | Expo (Expo Push Notifications) | Jeton de notification, contenu de la notification | Clauses contractuelles types de la Commission européenne |
 | Google (Firebase Cloud Messaging) | Jeton d'appareil | Clauses contractuelles types / EU-US Data Privacy Framework |
 | Google Maps Platform | Coordonnées affichées sur la carte | Clauses contractuelles types / EU-US Data Privacy Framework |
+| Tally BV | Adresse e-mail saisie dans le formulaire de suppression | Société établie en Belgique (UE) ; ses propres sous-traitants techniques peuvent être hors EEE, couverts par clauses contractuelles types |
 
 Les opérateurs **Orange Money** et **MTN Mobile Money** traitent les données de paiement au **Cameroun**.
 
@@ -295,4 +329,4 @@ Toute modification substantielle vous sera notifiée dans l'Application ou par e
 Siège social : Yaoundé, Cameroun
 E-mail : **support@winmarketcm.com**
 Site web : **https://winmarketcm.com**
-Suppression de compte : **https://winmarketcm.com/delete-account**
+Suppression de compte : **[Lien ici](https://tally.so/r/M1exXg)**
